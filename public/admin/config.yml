@@ -1,0 +1,178 @@
+# ══════════════════════════════════════════════
+# KÜL CAFÉ & CO. — Decap CMS Configuration
+# Access the editor at: yoursite.netlify.app/admin
+# ══════════════════════════════════════════════
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Media files (photos) stored in public/photos
+media_folder: public/photos
+public_folder: /photos
+
+# ── COLLECTIONS ────────────────────────────────
+
+collections:
+
+  # ── SITE SETTINGS ────────────────────────────
+  - name: "site"
+    label: "🏠 Site Settings"
+    files:
+
+      - name: "hero"
+        label: "Hero Section"
+        file: "content/site.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow Text",      name: eyebrow,              widget: string }
+              - { label: "Headline Line 1",    name: headline_line1,       widget: string }
+              - { label: "Headline Line 2",    name: headline_line2,       widget: string }
+              - { label: "Headline Line 3",    name: headline_line3,       widget: string }
+              - { label: "Tagline",            name: tagline,              widget: string }
+              - { label: "Rating (e.g. 4.7★)", name: stat_rating,         widget: string }
+              - { label: "Rating Label",       name: stat_rating_label,   widget: string }
+              - { label: "Locations Count",    name: stat_locations,      widget: string }
+              - { label: "Locations Label",    name: stat_locations_label, widget: string }
+              - { label: "Items Count",        name: stat_items,          widget: string }
+              - { label: "Items Label",        name: stat_items_label,    widget: string }
+          - label: "Featured Section (Lo de Temporada)"
+            name: "season"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow",     name: eyebrow,     widget: string }
+              - { label: "Title Line 1", name: title_line1, widget: string }
+              - { label: "Title Line 2", name: title_line2, widget: string }
+              - { label: "Subtitle",    name: subtitle,    widget: string }
+          - label: "Gallery / Instagram"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow",           name: eyebrow,          widget: string }
+              - { label: "Title Line 1",       name: title_line1,      widget: string }
+              - { label: "Title Line 2",       name: title_line2,      widget: string }
+              - { label: "Subtitle",           name: subtitle,         widget: string }
+              - { label: "Instagram URL",      name: instagram_url,    widget: string }
+              - { label: "Instagram Handle",   name: instagram_handle, widget: string }
+          - label: "Final CTA Section"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow",     name: eyebrow,     widget: string }
+              - { label: "Title Line 1", name: title_line1, widget: string }
+              - { label: "Title Line 2", name: title_line2, widget: string }
+              - { label: "Subtitle",    name: subtitle,    widget: string }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Tagline",       name: tagline,   widget: string }
+              - { label: "Brand Copy",    name: copy,      widget: text }
+              - { label: "Rating Text",   name: rating,    widget: string }
+              - { label: "Phone Number",  name: phone,     widget: string }
+              - { label: "Email",         name: email,     widget: string }
+              - { label: "Instagram URL", name: instagram, widget: string }
+              - { label: "Uber Eats URL", name: uber_eats, widget: string }
+              - { label: "DoorDash URL",  name: doordash,  widget: string }
+
+  # ── MENU ─────────────────────────────────────
+  - name: "menu"
+    label: "🍹 Menu"
+    files:
+
+      - name: "featured"
+        label: "Featured Drinks (Lo de Temporada)"
+        file: "content/menu.json"
+        format: json
+        fields:
+          - label: "Featured Drinks"
+            name: "featured"
+            widget: "list"
+            fields:
+              - { label: "Drink Name",    name: name,   widget: string }
+              - { label: "Kicker Text",   name: kicker, widget: string }
+              - { label: "Description",   name: desc,   widget: string }
+              - { label: "Price",         name: price,  widget: string,
+                  hint: "Include $ sign, e.g. $6.40" }
+              - { label: "Badge Text",    name: badge,  widget: string, required: false }
+              - { label: "Badge Color",   name: badge_color, widget: string,
+                  required: false, hint: "Hex color e.g. #FFE058" }
+              - { label: "Photo",         name: photo,  widget: image, required: false }
+          - label: "Menu Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Category ID",  name: id,    widget: string,
+                  hint: "No spaces, e.g. sig, classic, matcha" }
+              - { label: "Tab Label",    name: label, widget: string }
+              - label: "Menu Items"
+                name: items
+                widget: list
+                fields:
+                  - { label: "Item Name",    name: name,  widget: string }
+                  - { label: "Description",  name: desc,  widget: string, required: false }
+                  - { label: "Price",        name: price, widget: string }
+                  - { label: "Badge Text",   name: badge, widget: string, required: false }
+                  - { label: "Badge Color",  name: badge_color, widget: string,
+                      required: false, hint: "Hex color e.g. #FFE058" }
+
+  # ── COMBOS ───────────────────────────────────
+  - name: "combos"
+    label: "🎁 KÜL Combos"
+    files:
+
+      - name: "combos"
+        label: "Combos"
+        file: "content/combos.json"
+        format: json
+        fields:
+          - label: "Combos"
+            name: "combos"
+            widget: "list"
+            fields:
+              - { label: "Number (e.g. 01)", name: num,    widget: string }
+              - { label: "Combo Name",       name: name,   widget: string }
+              - { label: "Description",      name: desc,   widget: string }
+              - { label: "Price",            name: price,  widget: string }
+              - { label: "Save Text",        name: save,   widget: string,
+                  hint: "e.g. Ahorras $1.50" }
+              - { label: "Accent Color",     name: accent, widget: string,
+                  hint: "Hex color e.g. #FFE058" }
+
+  # ── LOCATIONS ────────────────────────────────
+  - name: "locations"
+    label: "📍 Locations & Hours"
+    files:
+
+      - name: "locations"
+        label: "Locations"
+        file: "content/locations.json"
+        format: json
+        fields:
+          - label: "Locations"
+            name: "locations"
+            widget: "list"
+            fields:
+              - { label: "City",          name: city,          widget: string }
+              - { label: "Address Line 1", name: address_line1, widget: string }
+              - { label: "Address Line 2", name: address_line2, widget: string }
+              - { label: "Note",          name: note,          widget: string }
+              - { label: "Phone",         name: phone,         widget: string }
+              - { label: "Photo",         name: photo,         widget: string }
+              - label: "Hours"
+                name: hours
+                widget: list
+                fields:
+                  - { label: "Days",  name: days, widget: string,
+                      hint: "e.g. Lun - Sáb" }
+                  - { label: "Time",  name: time, widget: string,
+                      hint: "e.g. 8:00 AM - 5:00 PM" }
+              - { label: "Delivery Options", name: delivery,
+                  widget: list, field: { label: Option, name: item, widget: string } }
+              - { label: "Uber Eats URL",  name: uber_eats_url, widget: string }
+              - { label: "DoorDash URL",   name: doordash_url,  widget: string }
+              - { label: "Google Maps URL", name: maps_url,      widget: string }
