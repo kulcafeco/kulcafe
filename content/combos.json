@@ -1,0 +1,10 @@
+{
+  "combos": [
+    { "num": "01", "name": "Morning KÜL", "desc": "Café Latte + Pan de Bono. El inicio perfecto de tu mañana.", "price": "$8.50", "save": "Ahorras $1.00", "accent": "#FFE058" },
+    { "num": "02", "name": "Latina Breakfast", "desc": "Empanada Venezolana + Horchata Latte. Raíces en el plato, alma en la taza.", "price": "$10.50", "save": "Ahorras $0.90", "accent": "#FFB7CC" },
+    { "num": "03", "name": "Matcha Girl", "desc": "Strawberry Matcha + Croissant. La mañana estética que mereces.", "price": "$11.50", "save": "Ahorras $1.50", "accent": "#9FDF9F" },
+    { "num": "04", "name": "Work Mode", "desc": "Cappuccino + Chicken Pesto Panini. Para los que hacen las cosas.", "price": "$13.50", "save": "Ahorras $1.75", "accent": "#FFBE93" },
+    { "num": "05", "name": "Sweet Tooth", "desc": "Bebida Signature + 2 Truffles. Te lo mereces — punto.", "price": "$9.50", "save": "Ahorras $0.65", "accent": "#BEB5F1" },
+    { "num": "06", "name": "Tropical Escape", "desc": "Guava Cream Matcha + Ham Cachito. Un poco cálido, un poco tropical.", "price": "$10.90", "save": "Ahorras $1.75", "accent": "#9EEEF8" }
+  ]
+}

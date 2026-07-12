@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --y: #FFE058; --br: #804E44; --brd: #5a3530; --cr: #FFFFE1;
+  --pk: #FFB7CC; --gn: #9FDF9F; --pc: #FFBE93; --lv: #BEB5F1;
+  --cl: #9EEEF8; --ease: cubic-bezier(.16,1,.3,1);
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cr); color: var(--brd); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+
+.kul-eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--br); font-weight: 700; opacity: .65; margin-bottom: 10px; }
+.kul-section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px,5.5vw,66px); line-height: .92; color: var(--brd); margin-bottom: 12px; }
+.kul-section-title .accent { color: var(--br); }
+
+.btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 2px; padding: 13px 28px; border-radius: 8px; transition: transform .25s; cursor: pointer; border: none; }
+.btn:hover { transform: translateY(-3px); }
+.btn-dark { background: var(--brd); color: var(--cr); }
+.btn-yellow { background: var(--y); color: var(--brd); }
+.btn-ghost { border: 1.5px solid rgba(90,53,48,.3); color: var(--brd); background: transparent; }
+.btn-ghost-light { border: 1.5px solid rgba(255,255,225,.3); color: var(--cr); background: transparent; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes slideRight { from { opacity: 0; transform: translateX(-24px); } to { opacity: 1; transform: none; } }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+@media (max-width: 768px) {
+  .btn { min-height: 44px; }
+  a, button { -webkit-tap-highlight-color: rgba(255,224,88,.2); }
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--brd); }
+::-webkit-scrollbar-thumb { background: var(--y); border-radius: 2px; }

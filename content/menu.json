@@ -1,0 +1,127 @@
+{
+  "featured": [
+    {
+      "id": "strawberry-matcha",
+      "kicker": "Tropical Matcha · New",
+      "name": "Strawberry Matcha Latte",
+      "desc": "Fruity, dreamy & a little bit extra. You'll order it twice.",
+      "price": "$7.00",
+      "badge": "★ Más Pedido",
+      "badge_color": "#FFE058",
+      "badge_text_color": "#5a3530",
+      "photo": "/photos/feat-strawberry-matcha.jpg",
+      "card_bg": "#FFB7CC15",
+      "card_border": "#FFB7CC40"
+    },
+    {
+      "id": "mango-matcha",
+      "kicker": "Tropical Matcha · New",
+      "name": "Mango Matcha Latte",
+      "desc": "Sweet mango meets earthy matcha — tropical perfection.",
+      "price": "$6.65",
+      "badge": "New",
+      "badge_color": "#9FDF9F",
+      "badge_text_color": "#5a3530",
+      "photo": "/photos/feat-mango-matcha.jpg",
+      "card_bg": "#FFFFE1",
+      "card_border": "rgba(90,53,48,0.08)"
+    },
+    {
+      "id": "bacon-croissant",
+      "kicker": "Breakfast · Fan Fave",
+      "name": "Bacon & Egg Croissant",
+      "desc": "Bacon, egg & cheese on a fresh-baked croissant. Iconic.",
+      "price": "$10.72",
+      "badge": "#1 Breakfast",
+      "badge_color": "#FFBE93",
+      "badge_text_color": "#5a3530",
+      "photo": "/photos/food-bacon-croissant.jpg",
+      "card_bg": "#FFFFE1",
+      "card_border": "rgba(90,53,48,0.08)"
+    },
+    {
+      "id": "pistachio-latte",
+      "kicker": "Signature Latte",
+      "name": "Pistachio Latte",
+      "desc": "Silky latte with rich pistachio cream foam. Nutty & perfect.",
+      "price": "$6.75",
+      "badge": null,
+      "photo": "/photos/feat-pistachio.jpg",
+      "card_bg": "#FFFFE1",
+      "card_border": "rgba(90,53,48,0.08)"
+    }
+  ],
+  "categories": [
+    {
+      "id": "sig",
+      "label": "Signature Lattes",
+      "items": [
+        { "name": "Horchata Latte", "desc": "Espresso · rice milk · cinnamon", "price": "$6.40", "badge": "#1", "badge_color": "#FFE058" },
+        { "name": "Dulce de Leche Latte", "desc": "Smooth & creamy caramel soul", "price": "$6.50" },
+        { "name": "Pistachio Latte", "desc": "Silky · rich pistachio cream foam", "price": "$6.75" },
+        { "name": "Hot Toddy", "desc": "Chocolatey · nostalgic · irresistible", "price": "$5.95+" },
+        { "name": "Kokolatte", "desc": "Coconut · condensed milk · espresso over ice", "price": "$6.60" },
+        { "name": "Maria Cookie Latte", "desc": "Iced · cookie crumble · espresso", "price": "$6.50" },
+        { "name": "Strawberry Matcha", "desc": "Fruity · dreamy · a little extra", "price": "$7.00", "badge": "New", "badge_color": "#FFB7CC" },
+        { "name": "Guava Cream Matcha", "desc": "Tropical · floral · refreshing", "price": "$6.75", "badge": "New", "badge_color": "#9FDF9F" }
+      ]
+    },
+    {
+      "id": "classic",
+      "label": "Coffee Classics ☕",
+      "items": [
+        { "name": "Espresso", "desc": "Double shot · S. American blend · berries & chocolate notes", "price": "$3.30" },
+        { "name": "Espresso Macchiato", "desc": "Espresso marked with textured milk", "price": "$4.35", "badge": "POP", "badge_color": "#FFBE93" },
+        { "name": "Cortado", "desc": "Espresso + steamed milk · smooth & balanced", "price": "$4.68" },
+        { "name": "Cappuccino", "desc": "Equal parts espresso · steamed milk · foam", "price": "$5.22" },
+        { "name": "Cafe Latte", "desc": "Espresso + steamed milk · cozy & smooth", "price": "$5.75+" },
+        { "name": "Americano", "desc": "Espresso + water · clean & bold", "price": "$4.10+" }
+      ]
+    },
+    {
+      "id": "matcha",
+      "label": "Matcha & Tea",
+      "items": [
+        { "name": "Strawberry Matcha Latte", "desc": "Fruity · dreamy · a little extra", "price": "$7.00", "badge": "New", "badge_color": "#FFB7CC" },
+        { "name": "Guava Cream Matcha", "desc": "Tropical · floral · refreshing", "price": "$6.75", "badge": "New", "badge_color": "#9FDF9F" },
+        { "name": "Mango Matcha Latte", "desc": "Sweet mango · earthy matcha", "price": "$6.65", "badge": "New", "badge_color": "#FFE058" },
+        { "name": "Iced Coconut Matcha", "desc": "Coconut milk · matcha · over ice", "price": "$6.25+" },
+        { "name": "Iced Matcha Lemonade", "desc": "Matcha + house lemonade", "price": "$6.50" },
+        { "name": "Iced Matcha Latte", "desc": "Classic matcha over milk and ice", "price": "$6.50" }
+      ]
+    },
+    {
+      "id": "breakfast",
+      "label": "Breakfast",
+      "items": [
+        { "name": "Bacon & Egg Croissant", "desc": "Bacon · egg · cheese · fresh croissant", "price": "$10.72", "badge": "#1", "badge_color": "#FFE058" },
+        { "name": "Empanadas Venezolanas", "desc": "Beef, Chicken or Cheese", "price": "$4.35", "badge": "#2", "badge_color": "#FFBE93" },
+        { "name": "Ham Cachito", "desc": "Ham & cheese · golden roll", "price": "$5.22" },
+        { "name": "Pan de Bono 🇨🇴", "desc": "Cheesy · warm · gluten free", "price": "$4.12" },
+        { "name": "Avocado Toast", "desc": "Fresh avocado · artisan toast", "price": "$10.72" },
+        { "name": "Muffins", "desc": "Seasonal flavors · fresh daily", "price": "$4.68", "badge": "#3", "badge_color": "#BEB5F1" }
+      ]
+    },
+    {
+      "id": "sandwich",
+      "label": "Sandwiches",
+      "items": [
+        { "name": "Chicken Pesto Panini", "desc": "Grilled chicken · house pesto · mozzarella", "price": "$13.14" },
+        { "name": "Ham & Cheese Panini", "desc": "Ham · melted cheese · grilled & pressed", "price": "$9.85" },
+        { "name": "Triple Meat Focaccia", "desc": "Three meats · roasted garlic · house focaccia", "price": "$15.12" },
+        { "name": "Caprese Focaccia", "desc": "Mozzarella · tomato · basil · balsamic", "price": "$12.04" },
+        { "name": "Prosciutto & Mozz Baguette", "desc": "Imported prosciutto · fresh mozzarella", "price": "$13.81" }
+      ]
+    },
+    {
+      "id": "sweets",
+      "label": "Sweets",
+      "items": [
+        { "name": "Chocolate Truffles", "desc": "Rich · handmade · single", "price": "$3.25" },
+        { "name": "Alfajores", "desc": "Dulce de leche sandwich cookies", "price": "$3.25" },
+        { "name": "Muffins", "desc": "Rotating seasonal flavors · always fresh", "price": "$4.68" },
+        { "name": "Gluten Free Brownie", "desc": "Rich · fudgy · completely satisfying", "price": "$4.95" }
+      ]
+    }
+  ]
+}
