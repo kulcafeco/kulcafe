@@ -5,7 +5,7 @@ const chips = [
   { color: '#FFE058', name: 'Horchata Latte',        sub: '#1 Most Liked',       price: '$6.40' },
   { color: '#FFB7CC', name: 'Strawberry Matcha',     sub: 'Fruity · dreamy',     price: '$7.00' },
   { color: '#9FDF9F', name: 'Guava Cream Matcha',    sub: 'Tropical · refreshing', price: '$6.75' },
-  { color: '#FFBE93', name: 'Bacon & Egg Croissant', sub: '#1 Breakfast',        price: '$10.72' },
+  { color: '#FFBE93', name: 'Bacon & Egg Croissant', sub: '#1 Breakfast',        price: '$10.75' },
 ]
 
 export default function Hero({ hero, footer }) {
@@ -146,7 +146,7 @@ export default function Hero({ hero, footer }) {
             background: 'linear-gradient(105deg, var(--cr) 0%, rgba(255,255,225,0) 30%), linear-gradient(to top, rgba(90,53,48,.55) 0%, transparent 50%)',
           }} />
           {/* Drink chips — desktop */}
-          <div style={{ position: 'absolute', top: '50%', left: -38, transform: 'translateY(-50%)', display: 'flex', flexDirection: 'column', gap: 10, zIndex: 5 }}>
+          <div style={{ position: 'absolute', top: '50%', left: -50, transform: 'translateY(-50%)', display: 'flex', flexDirection: 'column', gap: 10, zIndex: 5 }}>
             {chips.map((chip, i) => (
               <div key={i} style={{
                 background: 'rgba(255,255,225,.40)',
@@ -171,7 +171,7 @@ export default function Hero({ hero, footer }) {
             <svg style={{ position: 'absolute', width: '100%', height: '100%', animation: 'spin 22s linear infinite' }} viewBox="0 0 100 100" fill="none">
               <path id="sc" d="M50,50 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0" fill="none" />
               <text fontFamily="'Bebas Neue',sans-serif" fontSize="10" fill="#FFE058" letterSpacing="6" opacity=".8">
-                <textPath href="#sc">STAY KÜL · KATY TX · HOUSTON · </textPath>
+                <textPath href="#sc">· STAY KÜL · KATY TX · HOUSTON TX · </textPath>
               </text>
             </svg>
             <img src="/logo-cream-horizontal.png" alt="KÜL"
