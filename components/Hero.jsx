@@ -146,7 +146,7 @@ export default function Hero({ hero, footer }) {
             background: 'linear-gradient(105deg, var(--cr) 0%, rgba(255,255,225,0) 30%), linear-gradient(to top, rgba(90,53,48,.55) 0%, transparent 50%)',
           }} />
           {/* Drink chips — desktop */}
-          <div style={{ position: 'absolute', top: '50%', left: -28, transform: 'translateY(-50%)', display: 'flex', flexDirection: 'column', gap: 10, zIndex: 5 }}>
+          <div style={{ position: 'absolute', top: '50%', left: -18, transform: 'translateY(-50%)', display: 'flex', flexDirection: 'column', gap: 10, zIndex: 5 }}>
             {chips.map((chip, i) => (
               <div key={i} style={{
                 background: 'rgba(255,255,225,.40)',
