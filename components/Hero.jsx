@@ -2,14 +2,14 @@
 import { useWindowSize } from '@/hooks/useWindowSize'
 
 const chips = [
-  { color: '#FFE058', emoji: '☕', name: 'Horchata Latte',       sub: '#1 Most Liked', price: '$6.40' },
-  { color: '#FFB7CC', emoji: '🍓', name: 'Strawberry Matcha',    sub: 'Fruity · dreamy', price: '$7.00' },
-  { color: '#9FDF9F', emoji: '🍈', name: 'Guava Cream Matcha',   sub: 'Tropical · refreshing', price: '$6.75' },
-  { color: '#FFBE93', emoji: '🥐', name: 'Bacon & Egg Croissant', sub: '#1 Breakfast', price: '$10.72' },
+  { color: '#FFE058', name: 'Horchata Latte',        sub: '#1 Most Liked',       price: '$6.40' },
+  { color: '#FFB7CC', name: 'Strawberry Matcha',     sub: 'Fruity · dreamy',     price: '$7.00' },
+  { color: '#9FDF9F', name: 'Guava Cream Matcha',    sub: 'Tropical · refreshing', price: '$6.75' },
+  { color: '#FFBE93', name: 'Bacon & Egg Croissant', sub: '#1 Breakfast',        price: '$10.72' },
 ]
 
 export default function Hero({ hero, footer }) {
-  const { isMobile, isTablet } = useWindowSize()
+  const { isMobile } = useWindowSize()
 
   return (
     <section style={{
@@ -20,7 +20,8 @@ export default function Hero({ hero, footer }) {
       overflow: 'hidden',
       position: 'relative',
     }}>
-      {/* LEFT — cream panel */}
+
+      {/* ── LEFT — cream panel ── */}
       <div style={{
         background: 'var(--cr)',
         padding: isMobile ? '40px 24px 36px' : 'clamp(48px,7vw,88px) clamp(32px,5vw,72px)',
@@ -29,23 +30,14 @@ export default function Hero({ hero, footer }) {
         borderLeft: isMobile ? 'none' : '6px solid var(--y)',
         borderTop: isMobile ? '5px solid var(--y)' : 'none',
       }}>
-        {/* Logo video */}
-        <div style={{ marginBottom: isMobile ? 18 : 28, animation: 'fadeUp .8s .2s both' }}>
-          <video autoPlay loop muted playsInline style={{
-            height: isMobile ? 36 : 'clamp(44px,6vw,60px)',
-            width: 'auto', display: 'block',
-          }}>
-            <source src="/logo-animation-yellow.mp4" type="video/mp4" />
-            <img src="/logo-color-horizontal.png" alt="KÜL Café" style={{ height: 36 }} />
-          </video>
-        </div>
 
         {/* Eyebrow */}
         <div style={{
           display: 'flex', alignItems: 'center', gap: 8,
           fontSize: isMobile ? 9 : 11, letterSpacing: '3px',
           textTransform: 'uppercase', color: 'var(--br)', fontWeight: 700,
-          marginBottom: isMobile ? 14 : 20, animation: 'fadeUp .7s .35s both',
+          marginBottom: isMobile ? 14 : 20,
+          animation: 'fadeUp .7s .2s both',
         }}>
           <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--y)', flexShrink: 0, display: 'inline-block' }} />
           {isMobile ? 'Houston & Katy, TX' : hero.eyebrow}
@@ -57,7 +49,7 @@ export default function Hero({ hero, footer }) {
           fontSize: isMobile ? 'clamp(52px,14vw,72px)' : 'clamp(58px,8.5vw,108px)',
           lineHeight: .86, color: 'var(--brd)',
           marginBottom: isMobile ? 16 : 24,
-          animation: 'fadeUp .9s .5s both',
+          animation: 'fadeUp .9s .35s both',
         }}>
           <span style={{ display: 'block' }}>{hero.headline_line1}</span>
           <span style={{ display: 'block', color: 'var(--br)' }}>{hero.headline_line2}</span>
@@ -70,7 +62,7 @@ export default function Hero({ hero, footer }) {
           color: 'var(--brd)', opacity: .65, fontWeight: 300,
           lineHeight: 1.7, maxWidth: isMobile ? '100%' : 380,
           marginBottom: isMobile ? 24 : 36,
-          animation: 'fadeUp .8s .68s both',
+          animation: 'fadeUp .8s .5s both',
         }}>{hero.tagline}</p>
 
         {/* CTAs */}
@@ -79,7 +71,7 @@ export default function Hero({ hero, footer }) {
           flexDirection: isMobile ? 'column' : 'row',
           flexWrap: 'wrap', gap: isMobile ? 10 : 12,
           marginBottom: isMobile ? 28 : 40,
-          animation: 'fadeUp .8s .82s both',
+          animation: 'fadeUp .8s .65s both',
         }}>
           <a href={footer.uber_eats} target="_blank" rel="noopener noreferrer"
             className="btn btn-yellow"
@@ -99,12 +91,12 @@ export default function Hero({ hero, footer }) {
         {/* Stats */}
         <div style={{
           display: 'flex', gap: isMobile ? 16 : 28,
-          animation: 'fadeUp .8s .95s both',
+          animation: 'fadeUp .8s .8s both',
         }}>
           {[
-            [hero.stat_rating, hero.stat_rating_label],
+            [hero.stat_rating,    hero.stat_rating_label],
             [hero.stat_locations, hero.stat_locations_label],
-            [hero.stat_items, hero.stat_items_label],
+            [hero.stat_items,     hero.stat_items_label],
           ].map(([num, label], i) => (
             <div key={i} style={{ display: 'flex', alignItems: 'stretch', gap: isMobile ? 16 : 28 }}>
               {i > 0 && <div style={{ width: 1, background: 'rgba(90,53,48,.15)' }} />}
@@ -117,9 +109,8 @@ export default function Hero({ hero, footer }) {
         </div>
       </div>
 
-      {/* RIGHT — photo (hidden on mobile, shown below on mobile) */}
+      {/* ── RIGHT — photo ── */}
       {isMobile ? (
-        /* Mobile: full-width photo strip */
         <div style={{ height: '55vw', overflow: 'hidden', position: 'relative' }}>
           <img src="/photos/hero-main.jpg" alt="KÜL Café"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -127,29 +118,26 @@ export default function Hero({ hero, footer }) {
             position: 'absolute', inset: 0,
             background: 'linear-gradient(to top, rgba(90,53,48,.5) 0%, transparent 60%)',
           }} />
-          {/* Mini drink chips on mobile */}
+          {/* Drink chips — mobile */}
           <div style={{
             position: 'absolute', bottom: 12, left: 12, right: 12,
             display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6,
           }}>
-            {chips.slice(0,4).map((chip, i) => (
+            {chips.map((chip, i) => (
               <div key={i} style={{
-                background: 'rgba(255,255,225,.92)',
-                backdropFilter: 'blur(8px)',
-                borderRadius: 8, padding: '7px 10px',
-                display: 'flex', alignItems: 'center', gap: 7,
+                background: 'rgba(255,255,225,.40)',
+                backdropFilter: 'blur(10px)',
+                WebkitBackdropFilter: 'blur(10px)',
+                borderRadius: 8, padding: '8px 10px',
+                display: 'flex', flexDirection: 'column', gap: 2,
               }}>
-                <span style={{ fontSize: 14 }}>{chip.emoji}</span>
-                <div>
-                  <div style={{ fontWeight: 700, fontSize: 9.5, textTransform: 'uppercase', color: 'var(--brd)', lineHeight: 1.2 }}>{chip.name}</div>
-                  <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 14, color: 'var(--br)' }}>{chip.price}</div>
-                </div>
+                <div style={{ fontWeight: 700, fontSize: 9.5, textTransform: 'uppercase', color: 'var(--brd)', lineHeight: 1.2 }}>{chip.name}</div>
+                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 14, color: 'var(--br)' }}>{chip.price}</div>
               </div>
             ))}
           </div>
         </div>
       ) : (
-        /* Desktop: full-height photo */
         <div style={{ position: 'relative', overflow: 'hidden' }}>
           <img src="/photos/hero-main.jpg" alt="KÜL Café specialty coffee"
             style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -157,22 +145,24 @@ export default function Hero({ hero, footer }) {
             position: 'absolute', inset: 0,
             background: 'linear-gradient(105deg, var(--cr) 0%, rgba(255,255,225,0) 30%), linear-gradient(to top, rgba(90,53,48,.55) 0%, transparent 50%)',
           }} />
-          {/* Floating chips */}
+          {/* Drink chips — desktop */}
           <div style={{ position: 'absolute', top: '50%', left: -28, transform: 'translateY(-50%)', display: 'flex', flexDirection: 'column', gap: 10, zIndex: 5 }}>
             {chips.map((chip, i) => (
               <div key={i} style={{
-                background: 'var(--cr)', borderRadius: 12,
-                padding: '11px 16px 11px 12px',
-                display: 'flex', alignItems: 'center', gap: 11,
-                boxShadow: '0 8px 28px rgba(90,53,48,.2)', minWidth: 220,
+                background: 'rgba(255,255,225,.40)',
+                backdropFilter: 'blur(10px)',
+                WebkitBackdropFilter: 'blur(10px)',
+                borderRadius: 12,
+                padding: '11px 16px',
+                display: 'flex', alignItems: 'center', gap: 14,
+                minWidth: 220,
                 animation: `slideRight .6s ${0.85 + i * 0.15}s both`,
               }}>
-                <div style={{ width: 36, height: 36, borderRadius: 9, flexShrink: 0, background: chip.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>{chip.emoji}</div>
-                <div>
+                <div style={{ flex: 1 }}>
                   <div style={{ fontWeight: 700, fontSize: 12, textTransform: 'uppercase', letterSpacing: '.4px', color: 'var(--brd)', lineHeight: 1.2 }}>{chip.name}</div>
-                  <div style={{ fontSize: 10.5, color: 'var(--br)', opacity: .7, fontWeight: 300 }}>{chip.sub}</div>
+                  <div style={{ fontSize: 10.5, color: 'var(--br)', opacity: .8, fontWeight: 300, marginTop: 2 }}>{chip.sub}</div>
                 </div>
-                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 20, color: 'var(--br)', marginLeft: 'auto', paddingLeft: 10 }}>{chip.price}</div>
+                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 20, color: 'var(--brd)', flexShrink: 0 }}>{chip.price}</div>
               </div>
             ))}
           </div>
@@ -184,7 +174,10 @@ export default function Hero({ hero, footer }) {
                 <textPath href="#sc">STAY KÜL · KATY TX · HOUSTON · </textPath>
               </text>
             </svg>
-            <img src="/logo-cream-horizontal.png" alt="KÜL" style={{ width: 58, filter: 'brightness(0) invert(1)', opacity: .9, position: 'relative' }} />
+            <img src="/logo-cream-horizontal.png" alt="KÜL"
+              style={{ width: 58, filter: 'brightness(0) invert(1)', opacity: .9, position: 'relative' }}
+              onError={(e) => e.target.style.display = 'none'}
+            />
           </div>
         </div>
       )}
