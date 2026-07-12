@@ -1,11 +1,11 @@
 {
   "hero": {
-    "eyebrow": "Houston & Katy, TX · Specialty Coffee · Est. 2024",
+    "eyebrow": "Houston & Katy, TX · Specialty Coffee · Est. 2025",
     "headline_line1": "SONRÍE,",
     "headline_line2": "IT'S A",
     "headline_line3": "GOOD DAY.",
-    "tagline": "Latin-inspired specialty coffee, tropical matchas, and fresh-baked bread. Your new morning ritual.",
-    "stat_rating": "4.7★",
+    "tagline": "Latin-inspired specialty coffee, tropical matchas, and fresh-baked pastries. Your new morning ritual.",
+    "stat_rating": "4.8★",
     "stat_rating_label": "Uber Eats Rating",
     "stat_locations": "2",
     "stat_locations_label": "Houston Area Locations",
@@ -13,13 +13,13 @@
     "stat_items_label": "Menu Items"
   },
   "season": {
-    "eyebrow": "Lo de Temporada",
+    "eyebrow": "This season",
     "title_line1": "Los que más",
     "title_line2": "se piden.",
     "subtitle": "Crafted with intention. Flavors that hit different every time."
   },
   "about": {
-    "kicker": "Our Story · Est. 2024",
+    "kicker": "Our Story · Est. 2025",
     "headline_line1": "More Than",
     "headline_line2": "Just Coffee.",
     "body": "KÜL Café was born from a simple truth — your morning should feel like something. Not rushed. Not generic. Warm, social, and a little unexpected. Latin-inspired flavors, specialty coffee, and fresh baked goods that make you want to stay a while."
@@ -36,9 +36,9 @@
     "step3_desc": "Good coffee brings people together. This place feels good. You'll want to come back — and you will."
   },
   "gallery": {
-    "eyebrow": "Síguenos",
+    "eyebrow": "Follow us",
     "title_line1": "@kulcafeco",
-    "title_line2": "en Instagram.",
+    "title_line2": "in Instagram.",
     "subtitle": "Fotos reales, momentos reales. Así se ve quedarse KÜL.",
     "instagram_url": "https://www.instagram.com/kulcafeco/",
     "instagram_handle": "@kulcafeco"
@@ -50,11 +50,11 @@
     "subtitle": "Tu nuevo ritual matutino te espera. Entra, desacelera, y disfruta algo genuinamente diferente."
   },
   "footer": {
-    "tagline": "Stay KÜL · Houston & Katy, TX · Est. 2024",
+    "tagline": "Stay KÜL · Houston & Katy, TX · Est. 2025",
     "copy": "Latin-inspired specialty coffee, fresh baked goods, and a space to slow down. Made with love in Houston, TX.",
-    "rating": "4.7 on Uber Eats · 4.8 on Google",
+    "rating": "4.8 on Uber Eats · 4.8 on Google",
     "phone": "(281) 717-4477",
-    "email": "hello@kulcafe.com",
+    "email": "kulcafe.tx@gmailcom",
     "instagram": "https://www.instagram.com/kulcafeco/",
     "uber_eats": "https://www.ubereats.com/store/kul-cafe-&-co/AV4WnqJxQWihgty8gMel-Q",
     "doordash": "https://www.doordash.com/store/kul-cafe-&-co-katy-37620731/"
