@@ -10,7 +10,7 @@
       "photo": "/photos/vibe-3.jpg",
       "hours": [
         { "days": "Lun – Sáb", "time": "8:00 AM – 5:00 PM" },
-        { "days": "Domingo", "time": "8:00 AM – 12:00 PM" }
+        { "days": "Domingo", "time": "9:00 AM – 1:00 PM" }
       ],
       "delivery": ["Uber Eats", "DoorDash", "Pickup"],
       "uber_eats_url": "https://www.ubereats.com/store/kul-cafe-&-co/AV4WnqJxQWihgty8gMel-Q",
@@ -22,11 +22,11 @@
       "city": "Houston, TX",
       "address_line1": "1434 Sherwood Forest St.",
       "address_line2": "Houston, TX 77043",
-      "note": "📍 Houston Sherwood Forest · Now Open",
-      "phone": "(281) 717-4477",
+      "note": "📍 Houston Sherwood Forest · Opening in August",
+      "phone": "(346) 335-7175",
       "photo": "/photos/vibe-1.jpg",
       "hours": [
-        { "days": "Lun – Sáb", "time": "8:00 AM – 5:00 PM" },
+        { "days": "Lun – Sáb", "time": "7:00 AM – 5:00 PM" },
         { "days": "Domingo", "time": "8:00 AM – 12:00 PM" }
       ],
       "delivery": ["Uber Eats", "DoorDash", "Pickup"],
